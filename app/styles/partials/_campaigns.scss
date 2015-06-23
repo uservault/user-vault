@@ -1,0 +1,70 @@
+.campaigns-container { min-height: 999px; background-color: #ffffff; width: 100%; padding: 20px 0px;
+	.top-container{ width: 93%; margin: 5px auto; height: 50px; padding-left: 10px;
+		.number-of-campiagns-container { position:relative; width: 20%; ; height: 35px; text-overflow: ellipsis;
+			.icon-air-plane-customization { font-size: 32px; color: #3e3e3e; vertical-align: middle; 	
+			}
+			.number-of-campaigns { @extend %gotham-ssm-medium; font-size:14px; text-transform: uppercase; position: absolute; top: 9px; left: 43px; color: #4d9de0;
+
+			}
+			
+		}
+		.new-auto-message-container { background: #6FD39C; margin: auto auto; text-align: center; border: none; width: 210px; border-radius: 29px; text-transform: uppercase; box-shadow: inset 0 -2px rgba(0, 0, 0, 0.1); color: #f2f2f2; cursor: pointer; padding: 1px 13px;
+			.new-auto-message-text{ text-align: center; vertical-align: middle; text-transform: uppercase; @extend %gotham-ssm-light; font-size:14px; color:#f2f2f2; line-height: 41px; letter-spacing: .03em;
+			}&:hover { background: #52A176;
+		}
+			
+		}
+	}
+	.messages-container { margin-top:11px; margin-left: 11px; height: 100%; width:100%;
+		.messages-header { width: 93%; height: 40px;  margin: 0 auto;
+			.messages-header-title{ width: 38%; height:100%; height:100%}
+			.messages-header-status { width: 13%; height:100%;}
+			.message-header-channel { width: 13%; height:100%;}
+			.message-header-sender { width: 36%; height:100%;}
+		}
+		.messages-table { width: 93%; margin: 0 auto; 
+			.table-row {   width: 100%; height: 80px; background-color:#3e3e3e; overflow: hidden; margin-bottom: 1px; margin-bottom: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.4); border-radius: 2px;
+				.message-title-trigger-container{ height: 100%; width:38%; border-right:1px rgb(111, 106, 106) solid; padding-top:12px; padding-left: 20px; margin-bottom: 1px;
+					.message-title{ @extend %gotham-ssm-medium; font-size: 15px; color: 
+rgba(132, 144, 182, 0.58); text-transform: uppercase;
+					}
+					.message-triggers{ @extend %gotham-ssm-book; font-size: 12px; color:#ffffff; padding-top: 8px; color:#f2f2f2;
+					}					
+				}
+				.message-status { height:100%; width: 13%; text-overflow: ellipsis; -webkit-font-smoothing: antialiased; border-right:rgb(111, 106, 106) 1px solid;
+					.icon-play.icon-play-centered{ text-align: center; font-size: 28px; margin-top: 12px; color:#f2f2f2; }
+					.status-title { text-align: center; font-size: 14px; color: #f2f2f2; text-transform:uppercase; @extend %gotham-ssm-medium; margin-top: 7px;}
+					.icon-pause.icon-pause-centered {text-align: center; font-size: 28px; margin-top: 12px; color:#f2f2f2;			
+					}
+					
+				}			
+				
+				.message-channel { height:100%; width: 13%; text-overflow: ellipsis; -webkit-font-smoothing: antialiased; border-right:rgb(111, 106, 106) 1px solid;		
+					.email { text-align: center; width:100%; height: 100%; margin-top:14px;
+						.email-icon{ font-size: 26px; color: #f2f2f2; text-align: center;					
+						}
+						.email-title { text-align: center; font-size: 14px; color: #f2f2f2; text-transform:uppercase; @extend %gotham-ssm-medium; margin-top: 7px;
+						}
+					}
+					.sms { text-align: center; width:100%; height: 100%; margin-top:14px;
+						.sms-icon { font-size: 30px; color: #f2f2f2; text-align: center;		
+						}
+						.sms-title{text-align: center; font-size: 14px; color: #f2f2f2; text-transform:uppercase; @extend %gotham-ssm-medium; margin-top: 7px;		
+						}	
+					}
+				}
+				.message-sender { height:100%; width: 36%; text-overflow: ellipsis; -webkit-font-smoothing: antialiased; padding: 22px 9px;
+					.name-container{ position:relative; width:100%; height:100%;
+						.icon-user.agent-icon { display:inline-block; margin-left: 14px; width:100%; color: #f2f2f2; font-size:28px; position: absolute; top: 5px;							
+							
+						}
+						.agent-name-title {display:inline; font-size: 14px; position: absolute; left: 50px; top: 9px; @extend %gotham-ssm-medium; text-transform: uppercase; color:#f2f2f2;
+						}
+					}		
+				}			
+			}			
+		}
+	}	
+}
+
+a:hover {text-decoration: none;}

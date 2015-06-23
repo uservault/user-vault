@@ -1,0 +1,44 @@
+<!--
+<div class="data-container-header-wrapper-cc">	
+	<div class="data-container-header" >
+		2. Card Information
+	</div>
+</div>	
+--->
+
+
+<div class="data-container-credit-card">
+	<div class="card-section">
+		<div class="submit-box">
+			<form stripe-form="stripeCallBack">
+				<div class="submit-box-header">
+					<div class="current-plan">
+						<h1 class="plan-title">Enterprise Plan</h1>
+						<p class="plan-details">1000 Paying Users</p>
+					</div>
+				</div>
+				<div class="card-wrapper">
+					
+					<div class="card-backgound">
+						<div class="payment-header">Payment Details</div>
+						<div class="card-number-header">Card Number</div>
+						<input ng-model="number" class="card-number-input" placeholder="#### - #### - #### - ####" type="text" cc-number cc-type="cardType" payments-format="card" payments-validate="card"/>
+						<div class="option-container">
+							<div class="expiration-header left">Expiration</div>
+							<div class="cvc-header right">CVC Code</div>
+						</div>
+						<div class="input-options-container">
+							<input type="text" ng-model="expiry" class="expiration-month" payments-format="expiry"
+   payments-validate="expiry" placeholder="MM/YYYY"></select>
+							
+							<input class="cvc-code" type="text" payments-format="cvc" payments-validate="cvc" placeholder="CVC" />
+						</div>		
+					</div>
+				</div>
+				<div class="submit-plan-section">
+					<button type="submit" class="submit-plan-button"><a class="link" href="/#/integrate">Sign Up</a></button>
+				</div>
+			</form>				
+		</div	
+	</div>
+</div>

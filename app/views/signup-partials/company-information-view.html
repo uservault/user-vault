@@ -1,0 +1,79 @@
+<!--
+<div class="container">
+	<div class="data-container-header-wrapper">	
+		<div class="data-container-header" style="width:276px;">
+			2. Company Information
+		</div>
+	</div>	
+	<div class="data-container">
+		<div class="data-container-wrapper">
+			<div class="cardholder-name-container">
+				<input type="text" class="cardholder-first-name input-box" placeholder="First Name" ng-model="userfirstname"/>
+				<input type="text" class="cardholder-last-name input-box" placeholder="Last Name" ng-model="userlastname" />
+			</div>
+			<div class="cardholder-company-container" >
+				<input type="text" class="cardholder-company-name input-box" ng-model="companyname" placeholder="Company Name" />
+			</div>
+			<div class="cardholder-credential-container">
+				<input type="text"class="cardholder-email input-box" placeholder="Email" ng-model="useremail"/>
+				<input type="password" class="cardholder-password input-box" ng-model="userpassword" placeholder="Password" />
+			</div>
+			<div class="submit-container">
+					<div class="submit-button" ng-click="changeView('creditCardInformationView')">Submit</div>
+			</div>
+		</div>
+	</div>
+</div>		
+-->
+
+<div class="signup-box">
+	<div class="signup-wrapper">
+		<div class="step-number">1</div>
+		<h3 class="company-information-text">Add Your Information</h3>
+		<p class="company-information-subtext"> Fill in these details to create your account and start using UserVault right away.</p>
+		<div class="form-wrapper">
+			<form>
+					<div class="cardholder-name-container">
+							<input type="text" class="cardholder-first-name input-box" placeholder="First Name" ng-model="userfirstname"/>
+							<input type="text" class="cardholder-last-name input-box" placeholder="Last Name" ng-model="userlastname" />
+					</div>
+					<div class="cardholder-company-container" >
+							<input type="text" class="cardholder-company-name input-box" ng-model="companyname" placeholder="Company Name" />
+					</div>
+					<div class="cardholder-credential-container">
+						<input type="text"class="cardholder-email input-box" placeholder="Email" ng-model="useremail"/>
+						<input type="password" class="cardholder-password input-box" ng-model="userpassword" placeholder="Password" />
+					</div>
+					<div class="submit-company-information-wrapper">
+						<div class="submit-info" ng-click="changeView('creditCardInformationView')">Submit</div>
+					</div>
+			</form>	
+		</div>				
+	</div>
+</div>
+
+
+<!--
+<div class="integrate-container">
+	<div class="fixed-header">
+		<div class="fixed-header-logo left"></div>
+	</div>
+	<div class="header-container">
+		<h1 class="header-text">Get Started With UserVault</h1>
+	</div>
+	<div class="integration-box">
+		<div class="integration-wrapper">
+			<div class="step-number">1</div>
+			<h3 class="import-users-text">Import Your Users From Stripe</h3>
+			<p class="import-users-subtext">Import all your customers from Stripe into UserVault; you can then filter, segment and send messages based off account balance, plan, monthly price, and more.</p>
+			<div class="stripe-uservault-wrapper">
+				<div class="stripe-logo"><i class="fa fa-cc-stripe stripe-logo"></i></div>
+				<div class="plus-sign">+</div>
+				<div class="uservault-logo"></div>
+			</div>
+			<div class="connect-stripe-wrapper">
+				<div class="connect-stripe">Connect Stripe</div>
+			</div>
+		</div>
+	</div>
+</div>

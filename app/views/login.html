@@ -1,0 +1,59 @@
+<div class="login-overlay" ng-show="forgotemail">
+	<div class="dialog-password-recovery-wrapper">
+		<div class="dialog-password-main-container">
+			<div class="title-block">
+				<div class="text-holder">
+					<div class="title-text">Password Recovery</div>
+				</div>	
+			</div>
+			<div class="body-block">
+				 <div class="body-content">
+					 <div class="body-field">
+						 <div class="description-content">
+							 <div class="text">Please enter the email address that you used when creating your account.</div>
+						 </div>
+					 </div>
+					 <div class="body-email-field">
+						 <div class="email-content">
+							 <input type="text" class="email-input" placeholder="Email Address" />
+						 </div>
+					 </div>
+				 </div>
+			</div>
+			<div class="submission-block">
+				<div class="button-holder">
+					<div class="cancel left" ng-click="forgotEmailEscape()">cancel</div>
+					<div class="send-email right">send email</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="login-body" ng-show="!forgotemail">
+	<div class="login-container">
+		<div class="login-selector">
+			<div class="logo"></div>
+			<div class="logo-brand-name">UserVault</div>
+		</div>	
+		<div class="credential-container">
+			<div class="email-container">
+				<input type="text" name="email" class="email-input" placeholder="Email Address">
+			</div>
+			<div class="password-container">
+				<input type="password" name="email" class="password-input" placeholder="Password">
+				<div class="forgot-password" ng-click="sendEmail()">Forgot?</div>
+			</div>
+		</div>
+		<div class="login-options">
+			<div class="stay-logged-in">
+				<div ng-hide="!stayLoggedin" class="stay-logged-in-circle icon-check" ng-click="logInFalse()"></div>
+				<div ng-hide="stayLoggedin" class="stay-logged-in-circle-false  icon-blank" ng-click="loginTrue()"></div>
+				<div class="stay-logged-in-text" ng-click="loginSwitch()">Stay Logged In</div>
+			</div>
+		</div>
+		<div class="login-footer">
+			<div class="login-button">Login</div>
+		</div>
+	</div>
+</div>

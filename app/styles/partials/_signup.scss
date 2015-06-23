@@ -1,0 +1,218 @@
+input[placeholder]{ color: #ffffff;}
+
+
+
+
+.signup-container { width: 100%; height: 100%;   background: linear-gradient(135deg, rgba(236, 202, 88, 0.75), 23%, rgba(69, 167, 190, 0.8) 86%), url(../../images/horizon.png);   -webkit-background-size: cover; position:fixed;
+	.fixed-header { background: transparent; padding: 20px 50px; position:fixed; z-index:  1000;  width: 100%;
+		.fixed-header-logo { width: 58px; height:55px; background: url(../../images/user-vault-header-58-55-white.png);  -webkit-background-size: cover; background-size: cover; -webkit-filter: opacity(0.89);
+			@media only screen and (max-width: 635px){
+				visibility: hidden;
+			}		
+
+		}
+		.fixed-header-nav{  padding: 20px 0px; position: fixed;	right: 22px;
+			@media only screen and (max-width: 635px){
+				margin: 0 auto;
+			}
+			.links { list-style: none; float: right;
+				li { float: left !important; margin-left: 39px;
+					a{ text-decoration: none; float: left!important; color: #f2f2f2; -webkit-filter: opacity(0.89); @extend %gotham-ssm-extralight; font-size: 12px; text-transform: uppercase; letter-spacing: .1em;
+						&:hover {
+							font-weight: 400;
+						}
+					}
+				}		
+			}	
+		}	
+	}
+	.header-container { margin: 110px auto 0 auto; width: 100%; text-align: center; height: 128px; display: block;
+		.header-text{ @extend %gotham-ssm-extralight; font-size: 66px; font-weight: 400!important; color:#ffffff; text-rendering: geometricPrecision; 		
+			@media only screen and (max-width: 635px){
+				font-size: 40px;
+			}		
+		}
+		.subheader-text { @extend %gotham-ssm-extralight; font-size: 14px; color: #F2F2F2;
+		}	
+	}
+
+	.data-container-header-wrapper { margin-top: 46px; position: absolute; top: 0px; left:28px;
+		@media only screen and (max-width: 635px){
+				display: inline-flex; 
+			}	
+		
+		
+		
+		.data-container-header { float:left; padding: 13px 19px; border: #f2f2f2 2px solid; border-radius: 39px;  font-family: 'Gotham SSm A', 'Gotham SSm B'; font-size: 13px; color: #f2f2f2; font-weight: 500; letter-spacing:.1em; text-align: center; text-transform: uppercase; 
+			@media only screen and (max-width: 635px){
+				margin: -20px auto; 
+			}	
+		}
+	}	
+	
+.container { max-width: 90%; margin: 0 auto; position:relative;}	
+	.data-container{ padding-bottom:82px;
+		
+		.data-container-wrapper{ margin: 0 auto; width: 96%; position: initial; margin-top: 162px;  
+			.cardholder-name-container { width: 100%;
+				.cardholder-first-name { @extend %input-box-transparent;   margin-right: 5%;
+  width: 47%;}
+				.cardholder-last-name {  @extend %input-box-transparent; width:47%;
+					
+				}
+			}
+			.cardholder-company-container {  width: 100%;
+				.cardholder-company-name { @extend %input-box-transparent; width: 47%; margin-top: 22px;}
+			}
+			.cardholder-credential-container { width: 100%; margin-top:22px;
+				.cardholder-email { @extend %input-box-transparent; margin-right: 5%; width:47%;}
+				.cardholder-password { @extend %input-box-transparent; width: 47%; }
+			}
+			.submit-container {position:absolute; bottom: 0px; right: 4%; margin-top: 22px;
+				.submit-button { text-align: center; padding: 12.5px 25px; background: #70B877; color: #FAF8F8; text-transform: uppercase; font-size: 11px; cursor: pointer; letter-spacing: .1em; @extend %gotham-ssm-medium; text-rendering: optimizeLegibility; white-space: nowrap; border-radius: 28px;  width: 100px;
+				&:hover{ background: #5D9462;}	
+				}
+			}
+		}	
+	}
+}
+.data-container-credit-card{ overflow:hidden; width:100%;
+	.card-section{ width: 100%; float: left; text-align: center;
+		@media only screen and (max-width: 635px){
+				width:100%;
+			}	
+		
+		.submit-box { text-align: center; display: inline-block; background: rgba(34, 84, 174, 0.06); width: 600px; padding-bottom: 65px;
+			@media only screen and (max-width: 612px){
+				width: 100%;	
+			}
+			.submit-box-header { width: 100%; height: 77px; text-align:center; background: rgba(229, 248, 253, 0.78);
+				.current-plan{ width: 422px; margin: 0px auto; padding-top: 15px; text-align: left;
+					@media only screen and (max-width: 400px){
+				padding-left: 15px;	
+					}
+					.plan-title { font-size: 18px; margin-top: 0px; @extend %gotham-ssm-light; letter-spacing: .1em; display:inline-block; color:#9FAB90 
+						
+					}
+					.plan-details { font-size:14px; @extend %gotham-ssm-light; letter-spacing: .1em; color:#9FAB90;
+						
+					}
+				}
+				
+			}
+			.card-wrapper{ width:422px; height: 235px; position: relative; display: inline-block; margin-top: 38px;
+				@media only screen and (max-width: 635px){
+					margin: 76px auto 0 auto;
+					width: 401px;
+				}	
+				
+				
+				.card-backgound { border-radius: 10px; background: rgba(69, 77, 100, 1); height: 100%; width: 100%; position: relative; padding:26px; opacity:0.85;
+					.payment-header { height: 20px; float: left; @extend %gotham-ssm-medium; font-size: 16px; color: #f2f2f2; display:block; text-transform:uppercase; width:100%; letter-spacing: .1em;
+					}
+					.card-number-header { margin-top:16px; float:left; display:block; @extend %gotham-ssm-extralight; font-size: 12px; color: #f2f2f2; width:100%; letter-spacing: .1em; text-align: left;
+					}
+					.card-number-input { height: 33px; width: 100%; background: #ffffff; outline: none; margin-top: 14px; @extend %gotham-ssm-medium; font-size: 13px; padding: 7px; color: rgba(73, 91, 111, 1); letter-spacing: .2em;  -webkit-appearance: none; border-radius: 3px; border: none;
+					}
+					.option-container { width: 100%; margin-top:16px; display: inline-block;
+						.expiration-header { @extend %gotham-ssm-extralight; font-size: 12px; color: #f2f2f2; width:50%; letter-spacing: .1em; text-align: left;
+						}
+						.cvc-header { @extend %gotham-ssm-extralight; font-size: 12px; color: #f2f2f2; width:50%; letter-spacing: .1em; text-align: -webkit-right; display:inline-block; text-align: left;
+						}	
+					}
+					.input-options-container { width: 100%; display: inline-block; margin-top: 13px;
+						.expiration-month { height: 33px; width: 27%; background: #ffffff; outline: none; @extend %gotham-ssm-medium; font-size: 13px; padding: 7px; color: rgba(73, 91, 111, 1);  -webkit-appearance: none; border-radius: 3px; border: none; float: left; 
+						}
+						.expiration-year { height: 33px; width: 13%; background: #ffffff; outline: none; @extend %gotham-ssm-medium; font-size: 13px; padding: 7px; color: rgba(73, 91, 111, 1); letter-spacing: .2em;  -webkit-appearance: none; border-radius: 3px; border: none; float: left; margin-left: 10px;
+							
+						}
+						.cvc-code { height: 33px; width: 16%; background: #ffffff; outline: none;  @extend %gotham-ssm-medium; font-size: 13px; padding: 7px; color: rgba(73, 91, 111, 1); letter-spacing: .2em;  -webkit-appearance: none; border-radius: 3px; border: none; float: right; margin-right: 126px;
+						}
+					}
+				}
+			}
+			.submit-plan-section {  margin-top: 30px; width: 100%; height: 50px;
+				.submit-plan-button{  padding: 15px 29px; background: #6FD39C; margin: auto auto; text-align: center; border: none; width: 210px; border-radius: 29px; text-transform: uppercase; box-shadow: inset 0 -2px rgba(0,0,0,.1); @extend %gotham-ssm-medium; color:#f2f2f2; cursor: pointer; letter-spacing: .08em;
+						&:hover{ background: #599D77;}
+					.link { text-decoration: none; color: #f2f2f2;
+						
+					}						
+				}
+			}
+		}	
+	}
+}
+
+
+.submit-company-information-wrapper { margin-top: 30px; width: 100%; height: 50px;
+				.submit-info {   padding: 15px 29px; background: #6FD39C; margin: auto auto; text-align: center; border: none; width: 210px; border-radius: 29px; text-transform: uppercase; box-shadow: inset 0 -2px rgba(0,0,0,.1); @extend %gotham-ssm-light; color:#f2f2f2; cursor: pointer; letter-spacing: .08em; font-weight:500!important;
+						&:hover{ background: #599D77;}					
+				}
+			}
+
+
+
+.data-container-header-wrapper-cc {   max-width: 80%; margin: 0 auto;
+		@media only screen and (max-width: 635px){
+				display: inline-flex; 
+			}
+	.data-container-header { float:left; padding: 13px 19px; border: #f2f2f2 2px solid; border-radius: 39px;  font-family: 'Gotham SSm A', 'Gotham SSm B'; font-size: 13px; color: #f2f2f2; font-weight: 500; letter-spacing:.1em; text-align: center; text-transform: uppercase; 
+			@media only screen and (max-width: 635px){
+				margin: 0 auto; 
+			}	
+	}			
+}
+			
+.credit-card-header-container { position: relative;max-width: 80%; margin: 0 auto; height: 100px; min-width: 400px;
+	.data-container-header { float:left; padding: 13px 19px; border: #f2f2f2 2px solid; border-radius: 39px;  font-family: 'Gotham SSm A', 'Gotham SSm B'; font-size: 13px; color: #f2f2f2; font-weight: 500; letter-spacing:.1em; text-align: center; text-transform: uppercase; 
+			@media only screen and (max-width: 635px){
+				  float:none; width: 300px; margin: 0 auto;
+			}	
+	}			
+}
+
+.signup-box { width: 100%; text-align: center; 
+	.signup-wrapper{  width: 700px; display: inline-block; background-color: none; text-align: left; padding: 10px 0px 20px 0px;
+		@media only screen and (max-width: 700px){
+				width: 100%;
+		}	
+		.step-number{  background: rgba(224, 224, 224, 0.59); border-radius: 100%; color: #A6B286; display: inline-block; font-size: 15px; height: 22px; line-height: 22px; margin-left: -40px; margin-top: 17px; position: absolute; text-align: center; width: 22px; @extend %gotham-ssm-extralight;
+		}
+		.company-information-text { border-bottom: 2px solid rgba(242, 242, 242, 0.28); padding-bottom: 6px; color: rgba(242, 242, 242, 0.96); width: 100%; float: left; @extend %gotham-ssm-extralight; letter-spacing: .01em; font-size: 19px;
+			@media only screen and (max-width: 700px){
+				text-align: center;
+			}
+		}
+		.company-information-subtext { font-size: 15px; color:#f2f2f2; @extend %gotham-ssm-extralight;}
+		.form-wrapper{ width: 100%; padding-top: 10px; padding-bottom: 30px;
+			.cardholder-name-container { width: 100%;
+				.cardholder-first-name { @extend %input-box-transparent;   margin-right: 5%;
+  width: 47%;}
+				.cardholder-last-name {  @extend %input-box-transparent; width:47%;
+				}
+			}
+			.cardholder-company-container {  width: 100%;
+				.cardholder-company-name { @extend %input-box-transparent; width: 47%; margin-top: 22px;}
+			}
+			.cardholder-credential-container { width: 100%; margin-top:22px;
+				.cardholder-email { @extend %input-box-transparent; margin-right: 5%; width:47%;}
+				.cardholder-password { @extend %input-box-transparent; width: 47%; }
+			}
+			.submit-company-information-wrapper { margin-top: 30px; width: 100%; height: 50px;
+				.submit-info {   padding: 15px 29px; background: #6FD39C; margin: auto auto; text-align: center; border: none; width: 210px; border-radius: 29px; text-transform: uppercase; box-shadow: inset 0 -2px rgba(0,0,0,.1); @extend %gotham-ssm-light; color:#f2f2f2; cursor: pointer;
+						&:hover{ background: #599D77;}					
+				}
+			}
+		}
+	}
+}
+
+
+
+				
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+

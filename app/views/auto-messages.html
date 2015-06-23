@@ -1,0 +1,79 @@
+<div class="auto-messages-container">
+	<div class="campaign-edit-container">
+		<div class="campaign-input-container-top">
+			<!--comment out
+			<div ng-show="showTitle">
+				<div ng-click="showTitle = false;" class="campaign-edit-pencil-icon icon-uxpin-icon-set-pencil-regular"></div>
+				<div ng-click="showTitle = false;"class="campaign-draft-title">{{ draftTitle }}</div>
+			</div>
+			-->
+			<div class="">	
+				<input ui-keypress="{13:'showTitle = true'}" ng-model="draftTitle" class="campaign-name-input left" placeholder="NAME YOUR CAMPAIGN" />
+				<!-- ng-click has an inline function fo true to send showTile = true back to the controller -->
+				<div ng-click="showTitle = true;"class="campaign-edit-submit-checkmark icon-uxpin-icon-set-checkmark-regular left"></div>
+			</div>	
+		</div>
+		<div class="campaign-input-container-bottom">
+			<div  class="recipient-tile left">TO</div>
+			<div class="pill-container">
+				<div ng-click="" class="audience-filter-recipient-pill left">Subscription Status is Past Due & Days Delinquent is 15</div>
+			</div>
+			<div class="audience-button-container">
+				<div class="audience-viewer-button">Create Audience</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-message-type left">
+	<div class="container-message-type-inner">
+		<div class="message-title">Message Type</div>
+			<div class="message-tiles-container"> 
+				<div class="composer-selector-container left" ng-class="{active: currentComposerView == 'emailComposer'}" ng-click="composerType('emailComposer')">
+					<div class="composer-selector-icon icon-uxpin-icon-set-envelope-regular" style="font-size: 33px;"></div>
+					<div class="composer-selector-title">Email</div>
+				</div>
+				<div class="composer-selector-container right" ng-class="{active: currentComposerView == 'smsComposer'} "ng-click="composerType('smsComposer')">
+					<div class="composer-selector-icon icon-uxpin-icon-set-message-regular"></div>
+					<div class="composer-selector-title">SMS</div>
+				</div>
+			</div>	
+	</div>
+	<div class="container-message-from-container">
+		<div class="message-from-title">From</div>
+			<div class="selector-from-container">
+				<select class="message-from-dropdown" ng-model="message.from" ng-options="agent.name for agent in agents track by agent.id">
+						<option value="">Agent Name</option>
+				</select>
+				<div class="dropdown-arrow"><i class="fa fa-chevron-down"></i></div>
+			</div>
+		</div>
+		<div class="container-message-from-container">
+		<div class="message-from-title">Template</div>
+			<div class="selector-from-container">
+				<select class="message-from-dropdown" ng-model="message.template">
+					<option value="">Template</option>
+					<option value="plain">Plain</option>
+					<option value="custom">Custom</option>				
+				</select>
+				<div class="dropdown-arrow"><i class="fa fa-chevron-down"></i></div>
+			</div>
+		</div>
+		<!--
+		<button class="submit-from-button" ng-click="saveMessage(message)">Submit</button>
+		-->
+	</div>		
+</div>
+<div class="composer-main-container">
+	<div ng-switch="" on="currentComposerView">
+		<div ng-switch-when="emailComposer">
+			<div ng-include="'views/auto-mesasges-partials/email-composer.html'"></div>
+		</div>
+		<div ng-switch-when="smsComposer">
+			<div ng-include="'views/auto-mesasges-partials/sms-composer.html'"></div>	
+		</div>
+	</div>	
+</div>
+<div class="footer-submit">
+	<div class="message-save-button right">SAVE MESSAGE</div>
+</div>

@@ -1,0 +1,68 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+@import 'sass-bootstrap/lib/bootstrap';
+
+
+body { margin: 0px; padding:0;}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.left { float:left!important; }
+
+.right { float:right!important; }
+
+.campaigns-title { margin-top: 20px; text-transform: uppercase; @extend %gotham-ssm-medium; margin-left:3px; font-size: 11.5px;  color: #3e3e3e;}
+
+%clear-input { background-color: transparent!important; margin: 0!important; border: none; outline: none !important;  }
+
+%clear-textarea { background-color: transparent!important; margin: 0!important; border: none; outline: none!important; resize:none;  }
+
+%font-family { font-family: 'Open Sans', sans-serif; }
+
+%gotham-ssm-extralight {font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 200; font-style: normal;}
+
+%gotham-ssm-light {font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 300; font-style: normal;}
+
+%gotham-ssm-book { font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 400; font-style: normal;}
+
+%gotham-ssm-medium { font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 500; font-style: normal;}
+
+%gotham-ssm-bold { font-family: 'Gotham SSm A', 'Gotham SSm B'; font-weight: 700; font-style: normal; }
+
+%gotham-light { font-family: 'Gotham A', 'Gotham B'; font-weight: 300; font-style: normal; }
+
+%gotham-book { font-family: 'Gotham A', 'Gotham B'; font-weight: 400; font-style: normal; -webkit-font-smoothing: antialiased;}
+
+%gotham-bold { font-family: 'Gotham A', 'Gotham B'; font-weight: 700; font-style: normal; -webkit-font-smoothing: antialiased}
+
+%gotham-italic { font-family: 'Gotham A', 'Gotham B'; font-weight: 400; font-style: italic; }
+
+%gotham-italic-bold { font-family: 'Gotham A', 'Gotham B'; font-weight: 700; font-style: italic; }
+
+%gotham-narrow-black { font-family: 'Gotham Narrow A', 'Gotham Narrow B'; font-weight: 800; font-style: normal; }
+
+%gotham-medium {font-family: 'Gotham A', 'Gotham B'; font-weight: 500; font-style: normal;}
+
+%clear-select { @extend %clear-input; appearance: none; -webkit-appearance: none; }
+
+%input-box-transparent { box-sizing: border-box; background-color: rgba(31, 51, 129, 0.31); padding: 11px; line-height: 22px; height: 44px; @extend %gotham-ssm-extralight; font-size: 16px; outline: none; letter-spacing: .1em;   border-left: #514F4F 3px solid !important; border: none;
+	&:focus{ background: rgba(107, 107, 107, 0.27);
+	}
+}
+
+a { text-decoration: none;}
+
+@import "partials/_integrate.scss";
+@import "partials/header";
+@import "partials/automessages";
+@import "partials/icons";
+@import "partials/campaigns";
+@import "partials/elegant_icons";
+@import "partials/metrize_icons";
+@import "partials/_login.scss";
+@import "partials/_signup.scss";
+@import "partials/_creditcard.scss";

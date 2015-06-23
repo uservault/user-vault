@@ -1,0 +1,27 @@
+<div class="signup-container">
+	<div class="fixed-header">
+		<div class="fixed-header-logo left"></div>
+		<div class="fixed-header-nav right">
+			<ul class="links">
+				<li><a href="">Home</a></li>
+				<li><a href="">Pricing</a></li>
+				<li><a href="">Login</a></li>		
+			</ul>
+		</div>
+	</div>
+	<div class="top-line"></div>
+	<div class="header-container">
+		<h1 class="header-text">Signup Instantly</h1>
+		<p class="subheader-text">Risk Free. 14 Day Money Back Guarantee. Cancel Any Time.</p>
+	</div>
+	
+	<div ng-switch="" on="currentSignupView">
+		<div ng-switch-when="companyInformationView">
+			<div ng-include="'views/signup-partials/company-information-view.html'"></div>
+		</div>
+		<div ng-switch-when="creditCardInformationView">
+			<div ng-include="'views/signup-partials/credit-card-information-view.html'"></div>	
+		</div>
+	</div>			
+</div>	
+

@@ -1,0 +1,89 @@
+input[placeholder] { color: #3e3e3e;}
+
+.login-overlay { position: fixed; top: 0; right: 0; height: 100%; width: 100%; z-index: 30000; background: rgba(255,255,255,1);
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#BDBDBD', GradientType=1 );
+	.dialog-password-recovery-wrapper { z-index: 100001; margin: 120px auto; width: 370px;	transform: scale(1) translate3d(0,0,0);	
+		.dialog-password-main-container {   background: #f2f2f2; box-shadow: 0 4px 33px rgba(0,0,0,.22), 0 0 0 1px rgba(0,0,0,.04); max-height: 100%; overflow: hidden;
+			.title-block {   position: relative; padding: 16.5px 33px; border-bottom: 1px solid #e4e4e4;
+				.text-holder {
+					.title-text{ @extend %gotham-ssm-medium; text-transform:uppercase; font-size: 12px; color: #3e3e3e;
+						
+					}			
+				}
+			}
+			.body-block { position: relative; overflow-x: hidden; overflow-y: auto; width: 370px; height: 168px;
+				.body-content { position: absolute; padding: 0 33px; width: 100%!important; box-sizing: border-box;
+					.body-field { margin: 22px 0px; width: 100%!important;
+						.description-content {
+							.text { @extend %gotham-ssm-medium; font-size: 12px; color: #3e3e3e;
+							}
+							
+						}
+					}
+					.body-email-field {
+						margin: 22px 0px; width:100%!important;
+						.email-content{ 
+							.email-input{  box-sizing: border-box; position: relative; background-color: #fff; padding: 11px; line-height: 22px; height: 44px; width: 100%; color: #3e3e3e; border: none; @extend %gotham-ssm-book; font-size: 12px; color: #3e3e3e; outline: none;
+								
+							}		
+						}
+					}
+				}
+			}
+			.submission-block { position: relative; height:44px;
+				.button-holder { border-top: 1px solid #e4e4e4; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+					.cancel{ color: #3e3e3e !important; -webkit-appearance: none; border: 0; text-transform: uppercase; outline: none; font-size: 11px; @extend %gotham-ssm-medium; width: 50%; height: 100%; text-align: center; line-height: 44px; border-right: 1px solid #e4e4e4; cursor: pointer;
+						&:hover { background-color: #ffffff!important;}
+					}
+					.send-email { color: #3e3e3e !important; -webkit-appearance: none; border: 0; text-transform: uppercase; outline: none; font-size: 11px; @extend %gotham-ssm-medium; width: 50%; height: 100%; text-align: center; line-height: 44px; cursor: pointer;
+						&:hover { background: #ffffff!important;}	
+					}
+				}
+			}
+		}
+	}
+}
+
+.login-body { width: 100%; height: 100%; background: #f2f2f2; position:fixed;
+	.login-container { margin: 120px auto; width: 400px; height:341px; padding: 22px 33px;
+		.login-selector { margin: 0px auto; width: 252px; height: 62px; position: relative;
+			.logo { position:absolute; background-image: url('/images/vault-login.png'); height: 41px; width: 43px; background-position: center center; top:8x; left:0px; background-size: cover;
+			}		
+			.logo-brand-name{ position: absolute; @extend %gotham-ssm-light; font-size: 36px; left: 50px; bottom:14px; color: #3e3e3e;					
+			}
+		}
+		.credential-container { width: 334px; height: 126px; margin: 0 auto; 
+			.email-container { display:block; margin-top: 22px;
+				.email-input{   box-sizing: border-box; position: relative; background-color: #fff; padding: 11px; line-height: 22px; height: 44px; width: 100%; color: #3e3e3e; border: none; @extend %gotham-ssm-light; outline: none;  font-size: 16px;					
+				}
+			}
+			.password-container { display:block; margin-top: 11px; position:relative;
+				.password-input{   box-sizing: border-box; position: relative; background-color: #fff; padding: 11px; line-height: 22px; height: 44px; width: 100%; color: #3e3e3e; border: none; @extend %gotham-ssm-light; outline: none;  font-size: 16px;					
+				}
+				.forgot-password { position: absolute; top: 50%; right: 22px; margin-top: -11px; @extend %gotham-ssm-light; font-size:12px; cursor: pointer;
+				}
+			}
+		}
+		.login-options{   margin-bottom: 22px; position: relative;
+			.stay-logged-in{ padding-top: 11px; position: relative; position: relative;
+				.stay-logged-in-circle { font-size: 21px; color: #3e3e3e; cursor: pointer; position: absolute; top:3px;
+				}
+				.stay-logged-in-circle-false {font-size: 21px; color: #3e3e3e; cursor: pointer; position: absolute; top: 3px; color:#D0D0D0}
+				.stay-logged-in-text { @extend %gotham-ssm-book; color: #797979; font-size: 12px; position: absolute; left: 32px; top: 5px;	cursor: pointer;
+				}
+			}
+		}
+		.login-footer{ padding-top:12px;
+			.login-button{ margin: 0 auto; width:80px; height: 30px; border-radius: 15px; background: #3e3e3e; line-height: 30px; text-align: center; @extend %gotham-ssm-medium; color: #f2f2f2;
+				&:hover { background: #191919;
+			}	
+			}
+		}	
+	}	
+}

@@ -1,0 +1,28 @@
+.header-container { width: 100%; height: 78px; }
+
+.header { width: 100%; height : 78px; background-color: #3e3e3e; display: inline-block; overflow: hidden;}
+
+.header .logo { width: 58px; height: 55px; margin-top: 10px; margin-left:20px; background-image: url(../../images/user-vault-header-58-55-white.png); background-size: cover; background-position: center center; opacity: .9;}
+
+
+.tabs { width: 85%; float: right; margin-right: 40px;
+	ul { 
+		width: 100%; height:30px; margin-top: 30px; list-style: none;
+		li { height: 30px; float: right; margin-left: 40px; color:#f2f2f2; font-size: 16px; text-transform: uppercase; cursor: pointer; @extend %gotham-ssm-extralight; letter-spacing: .09em;
+		}
+		
+		li:hover { border-bottom: 3px solid #f2f2f2; }
+		
+		li a { text-decoration: none!important; color:#f2f2f2!important; letter-spacing: .09em;}
+			
+	}	
+}
+
+
+
+
+.subheader-filter-draft { width: 100%; height: 70px; background-color: #EBEBEB; border-bottom: 1px solid black; }
+
+.subheader-data-container { height: 90%; width: 90%; margin: 10px auto; border: 1px solid black; }
+
+li.active { border-bottom: 4px solid #6B6767; }
